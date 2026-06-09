@@ -1,0 +1,16 @@
+{
+    "name": "tmb-youtube-render-node",
+    "version": "1.0.0",
+    "description": "The Maximus Breakdown - render audio + image into 1080p MP4 for YouTube upload",
+    "main": "server.js",
+    "type": "module",
+    "engines": { "node": ">=20" },
+    "scripts": {
+          "start": "node server.js",
+          "dev": "node --watch server.js"
+    },
+    "dependencies": {
+          "express": "^4.19.2",
+          "@supabase/supabase-js": "^2.45.4"
+    }
+}
