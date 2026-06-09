@@ -1,0 +1,19 @@
+services:
+  - type: web
+      name: tmb-youtube-render-node
+          runtime: docker
+              plan: starter
+                  region: oregon
+                      dockerfilePath: ./Dockerfile
+                          healthCheckPath: /health
+                              autoDeploy: true
+                                  envVars:
+                                        - key: SUPABASE_URL
+                                                value: https://uzcuaqcgibnqoyenuirv.supabase.co
+                                                      - key: SUPABASE_SERVICE_ROLE_KEY
+                                                              sync: false
+                                                                    - key: RENDER_NODE_SECRET
+                                                                            sync: false
+                                                                                  - key: RENDER_BUCKET
+                                                                                          value: youtube-renders
+                                                                                          
